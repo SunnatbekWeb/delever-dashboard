@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+span {
+    margin: 0 !important;
+}
+
+body {
+    height: 100vh;
+    background: #4094F726;
+}
+
+.active {
+    .ant-menu-item {
+        background-color: #4094F7 !important;
+    }
+}
