@@ -23,3 +23,20 @@ body {
         background-color: #4094F7 !important;
     }
 }
+
+.login__container {
+    display: flex;
+
+    & .login__container-left {
+        width: 50%;
+        background: radial-gradient(#3e8fff 45%, #0067F4 100%);
+
+        & img {
+            top: 214px;
+        }
+
+        & .img_wrapper {
+            height: calc(100vh- 40px);
+        }
+    }
+}
