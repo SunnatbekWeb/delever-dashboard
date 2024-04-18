@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button, Checkbox, Form, Input } from "antd";
 
 const onFinish = (values) => {
@@ -10,6 +10,7 @@ const onFinishFailed = (errorInfo) => {
 import iMac from "../../assets/iMac.png";
 
 const Auth = () => {
+  
   return (
     <div className="login__container">
       <div className="login__container-left h-screen">

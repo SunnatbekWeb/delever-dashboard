@@ -1,10 +1,17 @@
 import React from "react";
 import { NavLink, useLocation } from "react-router-dom";
-import { Menu } from "antd";
+import { Dropdown, Menu } from "antd";
 import DLetter from "../../assets/DLetter.svg";
 import { FaChartBar, FaUser } from "react-icons/fa";
 import { IoMdCart, IoMdNotifications } from "react-icons/io";
 import { HiUsers } from "react-icons/hi";
+
+const items = [
+  {
+    key: "1",
+    label: <NavLink to="/login">Log out</NavLink>,
+  },
+];
 
 const Sidebar = () => {
   const location = useLocation();
@@ -49,9 +56,11 @@ const Sidebar = () => {
       </div>
       <div className="flex flex-col items-center gap-y-6 pb-4">
         <IoMdNotifications style={{ fontSize: "24px", color: "#6E8BB7" }} />
-        <div className="w-10 h-10 rounded-full grid place-content-center bg-gray-300">
-          <FaUser />
-        </div>
+        <Dropdown menu={{ items }} placement="topLeft" arrow>
+          <div className="w-10 h-10 rounded-full grid place-content-center bg-gray-300">
+            <FaUser />
+          </div>
+        </Dropdown>
       </div>
     </aside>
   );
