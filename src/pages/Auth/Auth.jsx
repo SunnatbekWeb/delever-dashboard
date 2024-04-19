@@ -1,15 +1,18 @@
 import React, { useState } from "react";
 import { Button, Checkbox, Form, Input } from "antd";
-
-const onFinish = (values) => {
-  console.log("Success:", values);
-};
-const onFinishFailed = (errorInfo) => {
-  console.log("Failed:", errorInfo);
-};
 import iMac from "../../assets/iMac.png";
+import { useNavigate } from "react-router-dom";
 
 const Auth = () => {
+  const navigate = useNavigate();
+
+  const onFinish = (values) => {
+    console.log("Success:", values);
+    navigate('/');
+  };
+  const onFinishFailed = (errorInfo) => {
+    console.log("Failed:", errorInfo);
+  };
   
   return (
     <div className="login__container">
