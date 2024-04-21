@@ -1,0 +1,35 @@
+<svg width="168.000000" height="168.000000" viewBox="0 0 168 168" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<filter id="filter_88_4947_dd" x="0.000000" y="0.000000" width="168.000000" height="168.000000" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+			<feOffset dx="0" dy="4"/>
+			<feGaussianBlur stdDeviation="1.33333"/>
+			<feComposite in2="hardAlpha" operator="out" k2="-1" k3="1"/>
+			<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+			<feBlend mode="normal" in2="BackgroundImageFix" result="effect_dropShadow_1"/>
+			<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+			<feOffset dx="0" dy="4"/>
+			<feGaussianBlur stdDeviation="1.33333"/>
+			<feComposite in2="hardAlpha" operator="out" k2="-1" k3="1"/>
+			<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+			<feBlend mode="normal" in2="effect_dropShadow_1" result="effect_dropShadow_2"/>
+			<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+			<feOffset dx="0" dy="4"/>
+			<feGaussianBlur stdDeviation="1.33333"/>
+			<feComposite in2="hardAlpha" operator="out" k2="-1" k3="1"/>
+			<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+			<feBlend mode="normal" in2="effect_dropShadow_2" result="effect_dropShadow_3"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="effect_dropShadow_3" result="shape"/>
+		</filter>
+	</defs>
+	<g filter="url(#filter_88_4947_dd)">
+		<rect id="Frame 56571" width="160.000000" height="160.000000" transform="translate(4.000000 0.000000)" fill="#FFFFFF" fill-opacity="0"/>
+		<path id="Ellipse 10" d="M83.75 160C127.89 160 163.75 124.14 163.75 80C163.75 35.85 127.89 0 83.75 0C39.6 0 3.75 35.85 3.75 80C3.75 124.14 39.6 160 83.75 160ZM129.7 41.44C138.46 51.87 143.75 65.32 143.75 80C143.74 93.62 139.14 107.32 129.7 118.55C120.95 129 108.61 136.54 94.16 139.07C80.74 141.44 66.45 139.29 53.75 131.94C41.95 125.14 32.38 114.3 27.38 100.51C22.71 87.71 22.34 73.26 27.38 59.48C32.03 46.67 41.04 35.37 53.75 28.05C65.55 21.22 79.71 18.36 94.16 20.92C107.58 23.28 120.28 30.19 129.7 41.44Z" fill="#1AC19D" fill-opacity="0.100000" fill-rule="evenodd"/>
+		<path id="Ellipse 9" d="M162.88 89.97C160.8 106.61 153.61 121.66 142.93 133.51C129.18 148.81 110.84 157.55 91.85 159.54C71.4 161.71 51.92 155.93 36.48 144.7C19.83 132.63 9.22 115.3 5.26 96.62C0.97 76.51 4.68 56.53 14.23 40C22.71 25.29 35.17 14.3 49.48 7.59C54.48 5.24 60.16 8.17 61.86 13.42C63.57 18.67 60.64 24.24 55.74 26.79C45.41 32.17 37.13 40.33 31.55 50C23.82 63.35 21.84 78.46 24.82 92.47C28.01 107.56 36.65 120.11 48.24 128.52C60.71 137.6 75.53 141.15 89.77 139.65C105.11 138.05 118.5 130.78 128.07 120.13C136 111.34 140.84 100.83 142.67 89.95C143.58 84.5 147.97 80 153.49 80C159.02 80 163.56 84.49 162.88 89.97Z" fill="#1AC19D" fill-opacity="1.000000" fill-rule="evenodd"/>
+		<path id="75%" d="M93.85 79.6C91.36 79.6 90.01 77.83 90.01 75.74L90.01 74.82C90.01 72.7 91.41 70.94 93.85 70.94C96.36 70.94 97.7 72.7 97.7 74.82L97.7 75.74C97.7 77.84 96.33 79.6 93.85 79.6ZM64.41 89L60.6 89L67.83 74.67L67.83 74.56L59.41 74.56L59.41 71.54L71.66 71.54L71.66 74.6L64.41 89ZM86.84 83.18C86.85 86.7 84.21 89.24 80.32 89.24C76.71 89.24 74.07 87.08 74.01 84.06L77.59 84.06C77.67 85.41 78.85 86.33 80.32 86.33C82.05 86.33 83.29 85.08 83.29 83.27C83.29 81.44 82.02 80.16 80.27 80.16C79.24 80.16 78.2 80.61 77.66 81.33L74.38 80.75L75.21 71.54L85.88 71.54L85.88 74.56L78.25 74.56L77.8 78.93L77.9 78.93C78.51 78.07 79.84 77.43 81.37 77.43C84.51 77.43 86.85 79.83 86.84 83.18ZM93.37 89L91.15 89L103.15 71.54L105.37 71.54L93.37 89ZM93.85 73.12C92.83 73.12 92.51 74 92.51 74.82L92.51 75.74C92.51 76.57 92.84 77.41 93.85 77.41C94.89 77.41 95.2 76.57 95.2 75.74L95.2 74.82C95.2 73.98 94.92 73.12 93.85 73.12ZM102.81 89.6C100.32 89.6 98.97 87.82 98.97 85.72L98.97 84.8C98.97 82.71 100.35 80.93 102.81 80.93C105.32 80.93 106.66 82.69 106.66 84.8L106.66 85.72C106.66 87.82 105.29 89.6 102.81 89.6ZM102.81 83.11C101.79 83.11 101.45 83.97 101.45 84.8L101.45 85.72C101.45 86.53 101.78 87.4 102.81 87.4C103.85 87.4 104.16 86.56 104.16 85.72L104.16 84.8C104.16 83.97 103.89 83.11 102.81 83.11Z" fill="#1AC19D" fill-opacity="1.000000" fill-rule="evenodd"/>
+	</g>
+</svg>

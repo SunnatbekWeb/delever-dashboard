@@ -10,7 +10,9 @@ const Layout = () => {
         <Sidebar />
         <div className="grow">
           <Header />
-          <Outlet />
+          <main className="overflow-y-scroll">
+            <Outlet />
+          </main>
         </div>
       </div>
     </>

@@ -6,7 +6,7 @@ const Header = () => {
 
   return (
     <header className="pl-8 py-3 pr-5 bg-white min-w-full block">
-      <h2 className="text-2xl font-semibold text-[#303940] w-full">
+      <h2 className="text-2xl font-semibold text-[#303940] w-full capitalize">
         {location.pathname == "/" ? "Dashboard" : location.pathname.slice(1)}
       </h2>
     </header>
