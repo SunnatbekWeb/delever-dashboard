@@ -23,9 +23,41 @@ main {
 }
 
 .active {
-    .ant-menu-item {
-        background-color: #4094F7 !important;
+
+    .ant-menu-item-active {
+        background: #4094F7 !important;
+        border-right: 5px solid #4094F7 !important;
     }
+}
+
+.marketingMenu {
+    & a {
+        background: #FFFFFF;
+        color: #333333;
+        padding: 10px 20px;
+        border-radius: 6px;
+        font-weight: 600;
+    }
+
+    .active {
+        background: #0067F4;
+        color: #FFFFFF;
+        padding: 10px 20px;
+        border-radius: 6px;
+        font-weight: 600;
+    }
+}
+
+.ant-menu-item {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.ant-menu-submenu-title {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
 }
 
 .login__container {
