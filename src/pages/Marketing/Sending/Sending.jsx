@@ -5,7 +5,7 @@ import { MdOutlineChevronLeft } from "react-icons/md";
 import { RiFilterFill, RiTableFill } from "react-icons/ri";
 import { HiDownload } from "react-icons/hi";
 
-const Banners = () => {
+const Sending = () => {
   // Table columns
   const columns = [
     {
@@ -28,13 +28,13 @@ const Banners = () => {
 
   // Table data 1
   const data = [];
-  for (let i = 1; i < 9; i++) {
+  for (let i = 1; i < 5; i++) {
     data.push({
       key: i,
       number: i,
       image: (
         <img
-          src={`https://picsum.photos/id/${i+10}/80/80`}
+          src={`https://picsum.photos/id/${i}/80/80`}
           className="rounded-md"
           alt=""
         />
@@ -95,4 +95,4 @@ const Banners = () => {
   );
 };
 
-export default Banners;
+export default Sending;

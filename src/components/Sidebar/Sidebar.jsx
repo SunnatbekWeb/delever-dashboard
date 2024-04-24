@@ -12,6 +12,14 @@ const Sidebar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
 
+  useEffect(() => {
+    localStorage.setItem("menuOpen", JSON.stringify(menuOpen));
+  }, [menuOpen]);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   const items = [
     {
       key: "1",
@@ -46,7 +54,13 @@ const Sidebar = () => {
       `${
         location.pathname === "/marketing/sales"
           ? "/marketing/sales"
-          : location.pathname
+          : location.pathname === "/marketing/banners"
+          ? "/marketing/banners"
+          : location.pathname === "/marketing/reviews"
+          ? "/marketing/reviews"
+          : location.pathname === "/marketing/sending"
+          ? "/marketing/sending"
+          : ""
       }`,
       <MdOutlineMyLocation style={{ fontSize: "20px" }} />
     ),
@@ -54,9 +68,7 @@ const Sidebar = () => {
 
   return (
     <aside
-      className={`h-screen ${
-        menuOpen ? "w-[300px]" : "w-fit"
-      } flex bg-white`}
+      className={`h-screen ${menuOpen ? "w-[300px]" : "w-fit"} flex bg-white`}
     >
       <div className="h-screen flex flex-col justify-between">
         <div>
@@ -87,13 +99,15 @@ const Sidebar = () => {
       <div className={`${menuOpen ? "" : "hidden"} grow`}>
         <div className="m-4 flex items-center justify-between">
           <h3 className="text-2xl text-[#0974E9] font-bold">Delever</h3>
-          <Button onClick={() => setMenuOpen(false)}>
+          <Button onClick={toggleMenu}>
             <MenuFoldOutlined />
           </Button>
         </div>
         <div className="marketingMenu flex flex-col mx-4">
           <NavLink to="/marketing/sales">Акции</NavLink>
           <NavLink to="/marketing/banners">Баннеры</NavLink>
+          <NavLink to="/marketing/reviews">Отзывы</NavLink>
+          <NavLink to="/marketing/sending">Рассылка</NavLink>
         </div>
       </div>
     </aside>

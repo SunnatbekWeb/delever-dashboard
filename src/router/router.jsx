@@ -9,6 +9,8 @@ import Clients from "../pages/Clients/Clients";
 import Marketing from "../pages/Marketing/Marketing";
 import Sales from "./../pages/Marketing/Sales/Sales";
 import Banners from "./../pages/Marketing/Banners/Banners";
+import Reviews from "./../pages/Marketing/Reviews/Reviews";
+import Sending from "../pages/Marketing/Sending/Sending";
 
 const router = createBrowserRouter([
   {
@@ -39,6 +41,14 @@ const router = createBrowserRouter([
       {
         path: "/marketing/banners",
         element: <Banners />,
+      },
+      {
+        path: "/marketing/reviews",
+        element: <Reviews />,
+      },
+      {
+        path: "/marketing/sending",
+        element: <Sending />,
       },
     ],
   },

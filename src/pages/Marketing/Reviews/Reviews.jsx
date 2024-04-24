@@ -4,21 +4,18 @@ import { SearchOutlined } from "@ant-design/icons";
 import { MdOutlineChevronLeft } from "react-icons/md";
 import { RiFilterFill, RiTableFill } from "react-icons/ri";
 import { HiDownload } from "react-icons/hi";
+import { BiSolidLike } from "react-icons/bi";
 
-const Banners = () => {
+const Reviews = () => {
   // Table columns
   const columns = [
     {
-      title: "Изображение",
-      dataIndex: "image",
+      title: "Hазвание",
+      dataIndex: "name",
     },
     {
-      title: "Hазвание на узбекском",
-      dataIndex: "nameUz",
-    },
-    {
-      title: "Hазвание на русском",
-      dataIndex: "nameRu",
+      title: "Тип",
+      dataIndex: "type",
     },
     {
       title: "Статус",
@@ -28,19 +25,16 @@ const Banners = () => {
 
   // Table data 1
   const data = [];
-  for (let i = 1; i < 9; i++) {
+  for (let i = 1; i < 21; i++) {
     data.push({
       key: i,
       number: i,
-      image: (
-        <img
-          src={`https://picsum.photos/id/${i+10}/80/80`}
-          className="rounded-md"
-          alt=""
-        />
+      name: (
+        <span className="px-3 py-1 text-sm font-medium">
+          😉 Курьер молодец {i}
+        </span>
       ),
-      nameUz: <span className="px-3 py-1 text-sm font-medium">Banner {i}</span>,
-      nameRu: <span className="px-3 py-1 text-sm font-medium">Баннер {i}</span>,
+      type: <BiSolidLike style={{ fontSize: "24px", color: "#38D9B9" }} />,
       status: (
         <span className="px-3 py-1 rounded-md bg-[#4094F726] text-sm font-medium text-[#4094F7]">
           Активный
@@ -95,4 +89,4 @@ const Banners = () => {
   );
 };
 
-export default Banners;
+export default Reviews;
