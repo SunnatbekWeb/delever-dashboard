@@ -3,8 +3,7 @@ import { NavLink, useLocation } from "react-router-dom";
 import { Button, Dropdown, Menu } from "antd";
 import DLetter from "../../assets/DLetter.svg";
 import { FaChartBar, FaUser } from "react-icons/fa";
-import { IoMdCart, IoMdNotifications } from "react-icons/io";
-import { HiUsers } from "react-icons/hi";
+import { IoMdCart, IoMdNotifications, IoMdSettings } from "react-icons/io";
 import { MdOutlineMyLocation } from "react-icons/md";
 import { MenuFoldOutlined } from "@ant-design/icons";
 
@@ -64,6 +63,14 @@ const Sidebar = () => {
       }`,
       <MdOutlineMyLocation style={{ fontSize: "20px" }} />
     ),
+    getItem(
+      <NavLink
+        to={"/settings/company"}
+        onClick={() => setMenuOpen(true)}
+      ></NavLink>,
+      `${location.pathname === "/settings/company" && "/settings/company"}`,
+      <IoMdSettings style={{ fontSize: 20 }} />
+    ),
   ];
 
   return (
@@ -108,6 +115,7 @@ const Sidebar = () => {
           <NavLink to="/marketing/banners">Баннеры</NavLink>
           <NavLink to="/marketing/reviews">Отзывы</NavLink>
           <NavLink to="/marketing/sending">Рассылка</NavLink>
+          <NavLink to="/settings/company">Компания</NavLink>
         </div>
       </div>
     </aside>

@@ -11,6 +11,7 @@ import Sales from "./../pages/Marketing/Sales/Sales";
 import Banners from "./../pages/Marketing/Banners/Banners";
 import Reviews from "./../pages/Marketing/Reviews/Reviews";
 import Sending from "../pages/Marketing/Sending/Sending";
+import Company from "../pages/Settings/Company/Company";
 
 const router = createBrowserRouter([
   {
@@ -49,6 +50,10 @@ const router = createBrowserRouter([
       {
         path: "/marketing/sending",
         element: <Sending />,
+      },
+      {
+        path: "/settings/company",
+        element: <Company />,
       },
     ],
   },
