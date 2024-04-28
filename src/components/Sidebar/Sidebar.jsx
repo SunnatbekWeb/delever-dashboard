@@ -68,7 +68,7 @@ const Sidebar = () => {
         to={"/settings/company"}
         onClick={() => setMenuOpen(true)}
       ></NavLink>,
-      `${location.pathname === "/settings/company" && "/settings/company"}`,
+      `${location.pathname === "/settings/company" ? "/settings/company" : location.pathname === "/settings/rates" ? "/settings/rates" : location.pathname ==="/settings/liko" && "/settings/liko"}`,
       <IoMdSettings style={{ fontSize: 20 }} />
     ),
   ];
@@ -111,11 +111,20 @@ const Sidebar = () => {
           </Button>
         </div>
         <div className="marketingMenu flex flex-col mx-4">
-          <NavLink to="/marketing/sales">Акции</NavLink>
-          <NavLink to="/marketing/banners">Баннеры</NavLink>
-          <NavLink to="/marketing/reviews">Отзывы</NavLink>
-          <NavLink to="/marketing/sending">Рассылка</NavLink>
-          <NavLink to="/settings/company">Компания</NavLink>
+          {location.pathname.includes("/marketing") ? (
+            <>
+              <NavLink to="/marketing/sales">Акции</NavLink>
+              <NavLink to="/marketing/banners">Баннеры</NavLink>
+              <NavLink to="/marketing/reviews">Отзывы</NavLink>
+              <NavLink to="/marketing/sending">Рассылка</NavLink>
+            </>
+          ) : (
+            <>
+              <NavLink to="/settings/company">Компания</NavLink>
+              <NavLink to="/settings/rates">Тарифы</NavLink>
+              <NavLink to="/settings/liko">Liko</NavLink>
+            </>
+          )}
         </div>
       </div>
     </aside>

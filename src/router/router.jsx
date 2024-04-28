@@ -12,6 +12,9 @@ import Banners from "./../pages/Marketing/Banners/Banners";
 import Reviews from "./../pages/Marketing/Reviews/Reviews";
 import Sending from "../pages/Marketing/Sending/Sending";
 import Company from "../pages/Settings/Company/Company";
+import Filials from "../pages/Settings/Filials/Filials";
+import Rates from "../pages/Settings/Rates/Rates";
+import Liko from "../pages/Settings/Liko/Liko";
 
 const router = createBrowserRouter([
   {
@@ -55,6 +58,18 @@ const router = createBrowserRouter([
         path: "/settings/company",
         element: <Company />,
       },
+      {
+        path: "/settings/company/filials",
+        element: <Filials />,
+      },
+      {
+        path: "settings/rates",
+        element: <Rates />,
+      },
+      {
+        path:"/settings/liko",
+        element: <Liko />,
+      }
     ],
   },
   {
